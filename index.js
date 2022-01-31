@@ -1,1 +1,3 @@
-console.log("Hello World!");
+let familia = ["Douglas" , "Rayene" , "Bianca" , "Beatriz"];
+
+console.log(familia);
