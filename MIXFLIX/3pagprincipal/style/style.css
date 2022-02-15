@@ -1,0 +1,118 @@
+:root{
+    --preto: black;
+    --rosa: rgb(167, 5, 126);
+    --branco: white;
+    --cinza: rgb(150, 146, 146);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Arial';
+    color: var(--branco);
+}
+
+header .logo{
+    color: var(--rosa);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header .container{
+    margin-left: 5px; /*margem do logo e menu*/
+    display: flex; /*passa a lista de navegação para o lado do titulo*/
+    flex-direction: row; /*vai seguir a direção do display, no caso o row é pra ficar como linha*/
+    align-items: center;
+    justify-content: space-between; /*espaçamento entre o logo e a barra de navegação*/
+}
+
+header nav a{
+    text-decoration: none; /*tira a linha embaixo dos links*/
+    color: var(--cinza); /*cor dos links*/
+    margin-right: 10px; /*espaçamento entre o menu*/
+}
+
+header nav a:hover{ /*mudar enquanto o mouse passa em cima*/
+    color: #fff;
+}
+
+main a {text-decoration: none;
+    color: black;
+}
+
+main a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/projetos-dio/res.desafio1/img/principal.jpg);
+    height: 100%; /*tamanho da imagem*/
+    width: 100%; /*largura da imagem*/
+    background-size: contain; /*tamanho do background, no caso, o jeito que ficou a imagem*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .descricao-principal{
+    margin-bottom: 40px; /*espaçamento entre a descrição e os botoes*/
+    margin-top: 15px; /*espaçamento entre a descrição e o titulo*/
+}
+
+.principal .titulo{
+    margin-top: 15%; /*espaçamento entre o titulo e o topo*/
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.principal .botao{
+    background-color: rgb(190, 87, 118);
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px; /*espaçamento interno*/
+    margin-right: 15px; /*espaçamento entre os botões*/
+    margin-bottom: 10px; /*espaçamento entre o botão e o final da imagem*/
+    font-size: 12px;
+    cursor: pointer; /*quando passar o mouse vai indicar que é clicavel, vira uma mãozinha*/
+    transition: 2s ease all; /*cuida da parte da transição entre uma animação e outra, deu efeito no botao*/
+}
+
+.botao:hover{ /*alterações enquanto o mouse estiver por cima do botão*/
+    background-color: white;
+    border: 1px dotted rgb(172, 10, 123) ;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-right: 10x;
+    margin-left: 10px; /*espaçamento no principal*/
+}
+
+.principal .container{
+    width: 60%; /*texto*/
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-principal{
+    margin-top: 5px;
+}
+.item{
+    width: 120% !important;
+}

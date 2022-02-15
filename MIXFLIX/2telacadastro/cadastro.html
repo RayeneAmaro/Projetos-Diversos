@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/projetos/MIXFLIX/2telacadastro/style/style.css">
+
+    <title>Cadastro</title>
+</head>
+<body> 
+    <div class="logo">MIXFLIX</div>
+    
+    <div class="corpo">
+        <h1>Cadastro</h1>
+
+        <forms class="formulario">
+
+            <div class="dadospessoais">
+                <h3>Dados Pessoais</h3>
+                <label>Nome Completo:</label>
+                    <input class="nome" type="text">
+                <label>Data de Nascimento:</label>
+                    <input class="data" type="date">
+                <label>CPF:</label>
+                    <input type="text" class="cpf" placeholder="xxx.xxx.xxx.xx">
+                <label>Telefone/Celular:</label>
+                    <input type="number" class="phone" placeholder="(xx) x xxxx-xxxx">
+                <label>Endereço:</label>
+                <div class="endereco">
+                    <input type="text" class="rua" placeholder="Rua">
+                    <input type="text" class="num" placeholder="nº">
+                    <input type="text" class="bairro" placeholder="Bairro">
+                    <input type="text" class="complemento" placeholder="Complemento">
+                </div>
+                <label>Cidade/Estado/País:</label> 
+                <div class="local">
+                    <input type="Text" class="cidade" placeholder="Cidade">
+                    <input type="text" class="estado" placeholder="Estado">
+                    <input type="text" class="pais" placeholder="País">
+                </div>
+            </div>
+
+            <div class="acesso">
+                <h3>Informações de Acesso</h3>
+                <label>Login:</label>
+                    <input type="email" class="login" placeholder="xxxxx@xxxx.xxx">
+                <label>Senha:</label>
+                    <input type="password" class="senha" placeholder="8 digítos (letras e números)">
+                <label>Confirme a Senha:</label>
+                    <input type="password" class="senha" placeholder="8 digítos (letras e números)">
+            </div>
+
+            <div class="pagamento">
+                <h3>Informações de Pagamento</h3>
+                <label>Nome:</label>
+                    <input type="text" class="name" placeholder="Igual esta no cartão">
+                <label>Número do cartão</label>
+                    <input type="text" class="cartao" placeholder="Sem pontos e traços">
+                <br>
+                <label>CVV</label>
+                    <input type="text" class="cvv" placeholder="xxx">
+                <label>Validade</label>
+                    <input type="text" class="val" maxlength="5">
+                <select class="dados" name="dados">
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                </select>
+            </div>
+
+        <div class="button">
+            <a href="/projetos/MIXFLIX/3pagprincipal/index.html"><button class="botao">Cadastrar</button></a>
+            <a href="/projetos/MIXFLIX/1telalogin/index.html"><button class="botao">Voltar</button></a>
+        </div>
+            
+
+
+
+        </forms>
+    </div>
+
+
+    
+</body>
+</html>
