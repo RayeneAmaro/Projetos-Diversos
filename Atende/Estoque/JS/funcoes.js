@@ -71,7 +71,7 @@ function listarEstoque(){
                     document.write("<li>Código do produto: " +produto.codigo+ "</li>");
                     document.write("<li>Quantidade em estoque: " +produto.quantidade+ "</li>");
                     document.write("<li>Preço de custo: R$" +produto.custo+ "</li>");
-                    document.write("<li>Preço de venda: R$" +produto.venda+ "</li>");
+                    document.write("<li>Preço de venda: R$" +produto.venda.toFixed(2)+ "</li>");
                     document.write("</ul>");
                 });
             }

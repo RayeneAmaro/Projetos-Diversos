@@ -1,11 +1,17 @@
+body {
+
+    background-color: black;
+}
+
 .alinharRotulos {
     text-align: right;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .alinhaBtns{
     width: 30%;
-    background-color: black;
-    color: white;
-    border: 0px;
+    background-color: white ;
+    color: black;
+    border: 1px solid black;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -19,7 +25,7 @@
 }
 table{
     clear: both;
-    background-color: red;
+    background-color: rgb(51, 54, 216);
     border-radius: 10px;
     color: white;
     padding: 10px;
@@ -27,8 +33,9 @@ table{
     margin: auto;
 }
 caption{
-    color: red;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 25px;
-
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 0px 30px 0px;
 }
