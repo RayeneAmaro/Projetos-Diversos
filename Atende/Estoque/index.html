@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/funcoes.js"></script>
+    <link href="Estilo/style.css" rel="stylesheet">
+</head>
+
+<body onload="carregarTotalEstoque('totalEstoque')">
+    <div class="carrinho">
+        <p>Itens no estoque: <span id="totalEstoque">0</span></p>
+    </div>
+
+    <!--Formulário-->
+    <form>
+        <table>
+            <caption>Cadastro de novos produtos</caption>
+            <!--Nome/descrição do produto-->
+            <tr>
+                <td class="alinharRotulos">Nome do produto:</td>
+                <td><input id="txtNomeProduto" type="text"></td>
+            </tr>
+            <!--Código do produto-->
+            <tr>
+                <td class="alinharRotulos">Código do produto:</td>
+                <td><input id="txtCodProduto" type="text"></td>
+            </tr>
+            <!--Quantidade de estoque do produto-->
+            <tr>
+                <td class="alinharRotulos">Quantidade de estoque</td>
+                <td><input id="qtidadeProduto" type="number"></td>
+            </tr>
+            <!--Preço de custo-->
+            <tr>
+                <td class="alinharRotulos">Preço de custo:</td>
+                <td><input id="precoCusto" type="number"></td>
+            </tr>
+            <tr>
+                <td class="alinharRotulos">
+                    <input type="hidden" value="50" id="margem">
+                </td>
+            </tr>
+            <!--Botões-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('txtNomeProduto','txtCodProduto','qtidadeProduto','precoCusto','margem')">
+                    <input type="button" value="Ver estoque" class="alinhaBtns" onclick="window.open('verEstoque.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">               
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+
+</html>

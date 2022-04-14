@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/funcoes.js"></script>
+    <link href="Estilo/style.css" rel="stylesheet">
+    <title>Apagar Produtos</title>
+</head>
+<body onload="carregaProdutosSelect()">
+    Produto: <select id="selProdutos" onchange="populaProduto()">
+    
+    </select> 
+    <button type="button" onclick="apagarProduto()">Apagar Produto</button>
+
+    <div class="dados" style="margin-top:25px;display:none">
+        Codigo: <span id="codigo"> </span><br />
+        Nome: <span id="nome"> </span><br />
+        Custo: <span id="custo"> </span><br />
+        Quantidade: <span id="quantidade"> </span><br />
+        Venda: <span id="venda"> </span><br />
+    </div>
+</body>
+</html>
